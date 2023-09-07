@@ -1,0 +1,25 @@
+manifest_version: 1
+softwares:
+  software_A:
+    - 0.0.1
+  software_B:
+    - 0.0.1
+    - 0.0.2
+  software_C:
+    - 0.0.1
+    - 0.0.3
+    - 0.0.2
+stores:
+  store_A:
+    - "software_A"
+    - "software_B"
+  store_B:
+    - "software_C"
+mapping:
+  stores:
+    store_A: uuid_1
+    store_B: uuid_2
+  softwares:
+    software_A: uuid_3
+    software_B: uuid_4
+    software_C: uuid_5

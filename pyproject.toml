@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "harmony"
+version = "0.1.0"
+description = ""
+authors = ["Naveen Anil <naveen.anil@wind-pioneers.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+requests-mock = "^1.9.3"
+requests = "^2.27.1"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.4.0"
+pyinstaller = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

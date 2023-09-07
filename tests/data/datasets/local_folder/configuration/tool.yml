@@ -1,0 +1,12 @@
+id: tool
+schema_version: 0.1.0
+name: Tool Name
+description: Does nothing
+current_version: 1.0.0
+location: tests\data\datasets\local_folder
+name_format: tool_v{major}.{minor}.{patch}.exe
+last_updated: null
+type: binary
+update_location: tests\data\datasets\local_folder\local_aritifact
+update_frequency: on_demand
+archive_location: tests\data\datasets\local_folder\archived_versions
