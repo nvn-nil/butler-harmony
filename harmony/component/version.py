@@ -2,7 +2,7 @@ class SemanticVersion:
     def __init__(self, sem_version):
         self._raw = sem_version
 
-        versions = self._raw.lower().replace('v', '').split('.')
+        versions = self._raw.lower().replace("v", "").split(".")
 
         self._major_version = int(versions[0])
         self._minor_version = int(versions[1])
@@ -12,10 +12,10 @@ class SemanticVersion:
 
     def __str__(self):
         return self.version
-    
+
     def __repr__(self):
         return self.version
-    
+
     def __hash__(self):
         return hash(self.version)
 
@@ -64,7 +64,7 @@ class SemanticVersion:
     def __eq__(self, other):
         is_major_equal, is_minor_equal, is_patch_equal = self.compare(other)
         return is_major_equal and is_minor_equal and is_patch_equal
-    
+
     def get_latest_version(self, versions):
         latest_version = self
         for version in versions:

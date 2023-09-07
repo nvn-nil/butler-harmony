@@ -1,9 +1,6 @@
 import os
-import requests_mock
-import yaml
 
 from _base import BaseTestCase
-from harmony import VersionManifest
 
 from harmony.harmony import Harmony
 
